@@ -106,9 +106,7 @@ class DiffusionProcess:
 if __name__ == "__main__":
     # create a random image
     img = torch.rand(3, 256, 256)
-
     # test the diffusion process
-    """
     diffusion_process = DiffusionProcess(img, 1000)
     # diffuse image at time step 0
     xt = diffusion_process.diffuse(img, 0)
@@ -116,6 +114,4 @@ if __name__ == "__main__":
     print('Diffused Image:')
     print('\tshape: {}'.format(xt.shape))
     print('\tmin: {}, max: {}'.format(torch.min(xt), torch.max(xt)))
-    """
-
     # test the reverse diffusion process
